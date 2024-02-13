@@ -173,6 +173,10 @@ footer {
         width: 458px;
         height: 933px;
     }
+
+    .caixa-texto-resultado {
+        gap: 658px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -183,6 +187,10 @@ footer {
     .terceira-caixa-conteudo {
         width: 458px;
         height: 933px;
+    }
+
+    .caixa-texto-resultado {
+        gap: 658px;
     }
 }
 
