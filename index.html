@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge - Decodificador de texto</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header></header>
+
+    <!-- Main -->
+    <main>
+        <!-- Seção conteudo -->
+        <section class="conteudo">
+            <!-- Primeira caixa conteudo -->
+            <div class="primeira-caixa-conteudo">
+                <a href="./index.html">
+                    <img src="./assets/img/logo.png" />
+                </a>
+            </div>
+
+            <!-- Segunda caixa conteudo -->
+            <div class="segunda-caixa-conteudo">
+                <textarea type="text" id="texto" placeholder="Digite seu texto"></textarea>
+                <p class="ajustar-tamanho-texto">
+                    <i class='bx bxs-info-circle'></i>
+                    Apenas letras minúsculas e sem acento.
+                </p>
+                <div class="caixa-btns">
+                    <a class="btn-criptografar" href="#" onclick="processar('criptografar')">
+                        Criptografar
+                    </a>
+                    <a class="btn-descriptografar" href="#" onclick="processar('descriptografar')">
+                        Descriptografar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Terceira caixa conteudo -->
+            <div class="terceira-caixa-conteudo">
+                <img class="responsivo" src="./assets/img/quality.png" />
+                <p class="texto-encontrar-mensagem">Nenhuma mensagem encontrada</p>
+                <p class="digitar-texto">
+                    Digite um texto que você deseja criptografar ou descriptografar.
+                </p>
+                <div id="mensagem-copiado" style="display: none;"">Texto copiado!</div>
+                <div class="caixa-texto-resultado">
+                    <p id="resultado"></p> 
+                    <a href="#" id="btn-copiar" class="btn-copiar" onclick="copiarResultado()" style="display: none;">
+                    Copiar
+                    </a>
+                </div>
+            </div>
+        </section> 
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="ajustar-tamanho">Desenvolvido com 
+            <i class='bx bxs-heart'></i> por 
+            <a href="https://prwm.vercel.app/"
+                class="portfolio" 
+                target="_blank">Renan Willian Montanari - 2024
+            </a>
+            <a href=""  class="portfolio">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href=""  class="portfolio">
+                <i class='bx bxl-linkedin-square'></i>
+            </a>
+        </p>
+    </footer>    
+
+    <script src="./assets/js/scripts.js" defer></script>
+</body>
+</html>

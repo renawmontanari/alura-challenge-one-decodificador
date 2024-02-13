@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --cor-fundo: #F5F5F5;
+    --cor-primaria: #0A3871;
+    --cor-secundaria: #D8DFE8;
+    --cor-extra: #FFFFFF;
+    --cor-textoPrimaria: #343A40;
+    --cor-textoSecundaria: #495057;
+    --cor-coracao: #ff0000;
+    --cor-btn-verdadeiro: #6fc400;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+p {
+    color: var(--cor-primaria);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Primeira caixa */
+.primeira-caixa-conteudo {
+    width: 120px;
+}
+
+/* Segunda caixa */
+.segunda-caixa-conteudo {
+    width: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.segunda-caixa-conteudo textarea[type=text] {
+    height: 428px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 2rem;
+    padding-top: 100px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-fundo);
+}
+
+.segunda-caixa-conteudo p {
+    width: 252px;
+    height: 18px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--cor-textoSecundaria);
+    padding-bottom: 16px;
+}
+
+.caixa-btns {
+    width: 600px;
+    height: 67px;
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    text-align: center;
+}
+
+.btn-criptografar, 
+.btn-descriptografar, 
+.btn-copiar {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor-extra);
+    border-radius: 24px;
+    background-color: var(--cor-primaria);
+}
+
+.btn-descriptografar,
+.btn-copiar {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);  
+}   
+
+/* Terceira caixa */
+.terceira-caixa-conteudo {
+    width: 400px;
+    height: 544px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 32px;
+    background-color: var(--cor-extra);
+    -webkit-box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.12);
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.12);
+}
+
+.texto-encontrar-mensagem {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 28.8px;
+    padding: 32px 32px 16px 32px;
+    color: var(--cor-textoPrimaria);
+}
+
+.caixa-texto-resultado {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 350px;
+}
+
+.digitar-texto {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0px 32px 0px 32px;
+}
+
+#mensagem-copiado {
+    width: 150px;
+    height: 35px;
+    background-color: var(--cor-btn-verdadeiro);
+    color: var(--cor-extra);
+    border-radius: 24px;
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 20px;
+    z-index: 1000;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+}
+
+.bxs-heart {
+    font-size: 1.2rem;
+    color: var(--cor-coracao);
+}
+
+.portfolio {
+    color: var(--cor-primaria);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .conteudo {
+        padding: 12px;
+        flex-direction: column;
+    }
+
+    .caixa-btns {
+        width: 688px;
+        height: 145px;
+        flex-direction: row;
+    }
+
+    .segunda-caixa-conteudo textarea[type=text] {
+        height: 440px;
+    }
+
+    .caixa-texto-resultado {
+        height: 144px;
+        padding: 10px;
+        gap: 68px;
+    }
+
+    .btn-copiar {
+        width: 624px;
+        background-color: var(--cor-extra);
+    }
+
+    .responsivo {
+        display: none;
+    }
+
+    .terceira-caixa-conteudo {
+        width: 688px;
+        height: 233px;
+    }
+}
+
+@media (max-width: 425px) {
+    .conteudo {
+        padding: 12px;
+        flex-direction: column;
+    }
+
+    .caixa-btns {
+        width: 390px;
+        height: 245px;
+        flex-direction: column;
+    }
+
+    .responsivo {
+        display: none;
+    }
+
+    .segunda-caixa-conteudo {
+        width: 390px;
+    }
+
+    .segunda-caixa-conteudo textarea[type=text] {
+        height: 340px;
+    }
+
+    .btn-criptografar, 
+    .btn-descriptografar {
+        width: 400px;
+    }
+
+    .btn-copiar {
+        width: 390px;
+    }
+    
+    .terceira-caixa-conteudo {
+        width: 400px;
+        height: 204px;
+    }
+
+    .ajustar-tamanho {
+        text-align: center;
+        font-size: 0.80rem;
+    }
+
+    .ajustar-tamanho-texto {
+        margin-bottom: 7px;
+    }
+    
+    .caixa-texto-resultado {
+        height: 144px;
+        padding: 10px;
+        gap: 88px;
+    }
+}
