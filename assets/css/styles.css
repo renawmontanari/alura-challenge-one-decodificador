@@ -164,6 +164,17 @@ footer {
 }
 
 /* Responsivo */
+@media (max-width: 1440px) {
+    .segunda-caixa-conteudo textarea[type=text] {
+        height: 840px;
+    }
+
+    .terceira-caixa-conteudo {
+        width: 458px;
+        height: 933px;
+    }
+}
+
 @media (max-width: 768px) {
     .conteudo {
         padding: 12px;
