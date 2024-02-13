@@ -148,7 +148,7 @@ p {
     margin-bottom: 20px;
     z-index: 1000;
 }
-
+ 
 /* Rodapé */
 footer {
     text-align: center;
@@ -164,6 +164,17 @@ footer {
 }
 
 /* Responsivo */
+@media (max-width: 2560px) {
+    .segunda-caixa-conteudo textarea[type=text] {
+        height: 840px;
+    }
+
+    .terceira-caixa-conteudo {
+        width: 458px;
+        height: 933px;
+    }
+}
+
 @media (max-width: 1440px) {
     .segunda-caixa-conteudo textarea[type=text] {
         height: 840px;
