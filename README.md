@@ -1,4 +1,4 @@
-# Challenge ONE - Iniciante em Programação
+# Challenge ONE
 
 ## Sprint 01: Decodificador de Texto com Javascript
 
