@@ -2,7 +2,7 @@
 
 ## Sprint 01: Decodificador de Texto com Javascript
 
-Bem-vindo ao Challenge ONE para Iniciantes em Programação! Esta é a primeira sprint do desafio, onde você construirá um decodificador de texto utilizando HTML, CSS e Javascript.
+Bem-vindo ao Challenge ONE! Esta é a primeira sprint do desafio.
 
 ### Visão Geral
 
